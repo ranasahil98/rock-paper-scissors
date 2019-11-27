@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+.title {
+  background-color: gray;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.wrapper{
+  text-align: center;
+  background-color: #0c2b63;
+  height: 100vh;
+  color: white;
+}
+
+.score-board{
+  border: 3px solid white;
+  display: inline-block;
+  height: 120px;
+  width: 220px;
+  margin: 20px 0;
+  padding-top: 10px;
+  position: relative;
+  font-size: 70px;
+}
+
+.badge{
+  background-color: red;
+  font-size: 22px;
+  text-align: center;
+  }
+
+#user{
+  position: absolute;
+  top: 35%;
+  left: -25px;
+}
+
+#comp{
+  position: absolute;
+  top: 35%;
+  right: -35px;
+}
+
+
+.choices{
+  display: flex;
+  justify-content: space-around;
+  vertical-align: middle;
+}
+.choices >h2{
+  font-size: 60px;
+  margin-top: 5%;
+}
+
+.choices-user{
+  margin: 10px 0;
+}
+
+.choice-user{
+  display: block;
+  border: 3px solid white;
+  border-radius: 60%;
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px;
+  padding: 0px 20px;
+  transition: 0.3s ease;
+}
+
+.choice-user:hover{
+  background-color: #06071c;
+  cursor: pointer;
+  border: 15px dashed white;
+}
+
+.choices-comp{
+  margin: 10px 0;
+}
+
+.choice-comp{
+  display: block;
+  border: 5px solid white;
+  border-radius: 60%;
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px;
+  padding: 0px 20px;
+  transition: 0.3s ease;
+}
+
+/*
+.choice-comp:hover{
+  background-color: #06071c;
+  cursor: pointer;
+  border: 15px dashed white;
+}
+*/
+
+.win{
+  border : 10px dashed #0f260f;
+  background-color: #005200;
+  transition: 0.5s ease;
+}
+.win:hover{
+  border : 15px dashed #0f260f;
+  background-color: #005200;
+  transition: 0.5s ease;
+}
+.lose{
+  border : 10px dashed #3b1717;
+  background-color: #730000;
+    transition: 0.5s ease;
+}
+.lose:hover{
+  border : 15px dashed #3b1717;
+  background-color: #730000;
+    transition: 0.5s ease;
+}
+
+.winWrapper{
+  background-color: #007369;
+  transition: 0.9 ease:
+}
+.loseWrapper{
+  background-color: #9c0000;
+transition: 1.0 ease:
+}
+.drawWrapper{
+  background-color: #007a9c;
+transition: 2.7 ease:
+}
+
+.draw{
+  border : 10px dashed #333333;
+  background-color: blue;
+    transition: 0.5s ease;
+}
+.draw:hover{
+  border : 15px dashed #333333;
+  background-color: blue;
+    transition: 0.5s ease;
+}
+
+.selected{
+  border : 15px dashed #333333;
+  background-color: gray;
+    transition: 0.5s ease;
+    animation:blinkingText 0.9s infinite;
+}
+@keyframes blinkingText{
+  70%{opacity: .7;}
+  100%{opacity: 1;}
+}
+
+.selected:hover{
+  border : 1px dashed #333333;
+  background-color: gray;
+    transition: 0.5s ease;
+}
